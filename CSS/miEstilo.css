@@ -1,0 +1,125 @@
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo{
+    grid-area: logo;
+    text-align: center;
+    align-content: center;
+}
+
+.header{
+    grid-area: header;
+    text-align: end;
+}
+
+.main{
+    grid-area: main;
+    height: 250px;
+    text-align: center;
+}
+
+.nav{
+    grid-area: nav;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+
+/* .article{
+    grid-area: article;
+} */
+
+.footer{
+    grid-area: footer;
+    text-align: center;
+}
+
+@font-face {
+    font-family: Jose;
+    src: url(/static/EduAUVICWANTArrows-Regular.ttf);
+}
+
+.empresa {
+    color: rgb(204, 229, 229);
+    font-family: Jose;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.grid-container{
+    background-color: rgb(77, 87, 157);
+    border-color: 1px solid rgb(77, 87, 157);
+    border-radius: 5px;
+    padding: 5px;
+    display: grid;
+    /*grid-template-areas: 'header header  header  header  header'
+                         'nav    main    main    main    article'
+                         'nav    footer  footer  footer  footer' ;*/
+
+    grid-template-areas: 'logo    header  header  header  header'
+                         'nav     nav     nav     nav     nav   '
+                         'main    main    main    main    main  '
+                         'footer  footer  footer  footer  footer';
+}
+
+.grid-container div {
+    background-color: rgb(122, 64, 30);
+    border: 2px solid rgb(10, 10, 10);
+}
+
+a {
+    text-decoration: none;
+    background-color: rgb(183, 98, 38);
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: inline-block;
+}
+
+a:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+#home {
+    display: none;
+}
+
+#home:target {
+    display: block;
+}
+
+#somos{
+    display: none;
+}
+
+#somos:target{
+    display: block;
+}
+
+#productos{
+    display: none;
+}
+
+#productos:target{
+    display: block;
+}
+
+#contactanos{
+    display: none;
+}
+
+#contactanos:target{
+    display: block;
+}
+
+img{
+    border-radius: 5px;
+}
